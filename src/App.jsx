@@ -1,4 +1,5 @@
-const produtos = [
+import Home from "./Components/Home";
+export const produtos = [
   {
     nome: "Macbook Air 13 Chip M1 256gb",
     image: "https://m.media-amazon.com/images/I/41O807iqbCL._AC_SX522_.jpg",
@@ -25,26 +26,7 @@ function App() {
   return (
     <div>
       <h1>Produtos</h1>
-
-      <ul>
-        <li>
-          <h2>{produtos[0].nome}</h2>
-          <img src={produtos[0].image} />
-          <h3>{produtos[0].preco}</h3>
-        </li>
-
-        <li>
-          <h2>{produtos[1].nome}</h2>
-          <img src={produtos[1].image} />
-          <h3>{produtos[1].preco}</h3>
-        </li>
-
-        <li>
-          <h2>{produtos[2].nome}</h2>
-          <img src={produtos[2].image} />
-          <h3>{produtos[2].preco}</h3>
-        </li>
-      </ul>
+      <Home/>
     </div>
   );
 }
